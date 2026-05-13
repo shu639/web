@@ -9,9 +9,9 @@ export default function ProfileCard({ onClose }: { onClose: () => void }) {
         onClick={onClose}
       />
       {/* 卡片 */}
-      <div className="fixed inset-x-0 bottom-0 z-50 sm:absolute sm:inset-auto sm:right-0 sm:top-full sm:mt-3 sm:w-80 bg-white dark:bg-gray-900 rounded-t-2xl sm:rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-5 sm:p-6 animate-in fade-in slide-in-from-bottom sm:slide-in-from-top-2 duration-200">
+      <div className="fixed inset-x-0 bottom-0 z-50 max-h-[85vh] overflow-y-auto sm:absolute sm:inset-auto sm:right-0 sm:top-full sm:mt-3 sm:w-80 sm:max-h-none sm:overflow-visible bg-white dark:bg-gray-900 rounded-t-2xl sm:rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-5 sm:p-6 pb-8 sm:pb-6 animate-in fade-in slide-in-from-bottom sm:slide-in-from-top-2 duration-200">
         {/* 移动端拖拽条 */}
-        <div className="sm:hidden w-10 h-1 bg-gray-300 dark:bg-gray-600 rounded-full mx-auto mb-4" />
+        <div className="sm:hidden w-10 h-1 bg-gray-300 dark:bg-gray-600 rounded-full mx-auto mb-5" />
 
         <div className="flex items-center gap-3 sm:gap-4 mb-4">
           <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-white dark:border-gray-800 shadow-md shrink-0">
@@ -48,18 +48,18 @@ export default function ProfileCard({ onClose }: { onClose: () => void }) {
           ))}
         </div>
 
-        <div className="flex gap-4 pt-3 border-t border-gray-100 dark:border-gray-800">
+        <div className="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-800">
           <a
             href="https://github.com/shu639"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors py-1"
+            className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors py-2"
           >
             GitHub
           </a>
           <a
             href="mailto:example@email.com"
-            className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors py-1"
+            className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors py-2"
           >
             邮箱
           </a>

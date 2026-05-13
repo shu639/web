@@ -18,7 +18,9 @@ export default function Home() {
         <h2 className="text-xs sm:text-sm font-medium text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-5 sm:mb-6">
           文章列表
         </h2>
-        <PostList posts={posts} />
+        <div className="bg-gray-50 dark:bg-gray-900 rounded-xl sm:rounded-2xl px-4 sm:px-6 -mx-1 sm:mx-0 overflow-hidden">
+          <PostList posts={posts} />
+        </div>
       </section>
     </div>
   );
