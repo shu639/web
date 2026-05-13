@@ -8,7 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@next/swc-win32-x64-msvc": "^14.2.33",
     "gray-matter": "^4.0.3",
     "next": "^14.2.0",
     "react": "^18.3.0",
